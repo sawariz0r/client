@@ -2,7 +2,7 @@ import { Router } from "@reach/router";
 import React from "react";
 
 import Main from "./pages/Main/Main";
-import History from "./components/History/History";
+import History from "./components/atoms/History/History";
 
 interface Props {}
 

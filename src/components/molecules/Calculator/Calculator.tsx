@@ -1,7 +1,7 @@
 import React from "react";
-import { IPayload } from "../../pages/Main/Main";
-import Button from "../Button/Button";
-import Input from "../Input/Input";
+import { IPayload } from "../../../pages/Main/Main";
+import Button from "../../atoms/Button/Button";
+import Input from "../../atoms/Input/Input";
 import loading from "./loading.svg";
 
 interface Props {

@@ -3,7 +3,7 @@ import axios from "axios";
 import logo from "./logo.svg";
 import "./Main.scss";
 
-import Calculator from "../../components/Calculator/Calculator";
+import Calculator from "../../components/molecules/Calculator/Calculator";
 
 interface MainProps {
   path?: string;
