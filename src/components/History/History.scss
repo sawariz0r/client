@@ -1,0 +1,17 @@
+.history {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  color: #f3f3f3;
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__item {
+    padding: 4px 8px;
+  }
+}

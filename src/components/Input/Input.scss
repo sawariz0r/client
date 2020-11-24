@@ -1,0 +1,17 @@
+input {
+  padding: 8px 16px;
+  width: 160px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 8px;
+
+  transition: padding 0.2s ease-in-out;
+  &:focus {
+    padding: 16px 16px;
+  }
+
+  &:invalid {
+    opacity: 0.8;
+  }
+}
