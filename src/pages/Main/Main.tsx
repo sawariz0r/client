@@ -67,7 +67,7 @@ function App(props: MainProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} width="150px" className="App-logo" alt="logo" />
         {status !== "done" && (
           <p>
             Super advanced tree-calculator! <br />
