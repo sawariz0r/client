@@ -1,5 +1,4 @@
-import { PureComponent } from "react";
-import React, { memo } from "react";
+import React from "react";
 import "./Button.scss";
 
 interface ButtonProps {
@@ -7,8 +6,10 @@ interface ButtonProps {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export default memo(function Button(props: ButtonProps) {
+export const Button = (props: ButtonProps) => {
   const { text, onClick } = props;
 
   return <button onClick={onClick}>{text}</button>;
-});
+};
+
+export default Button;

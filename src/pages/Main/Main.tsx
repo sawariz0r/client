@@ -18,6 +18,7 @@ type IStatus = "ready" | "loading" | "done";
 
 function App(props: MainProps) {
   const [status, setStatus] = useState<IStatus>("ready");
+  const [msg, setMsg] = useState<string>("");
   const [result, setResult] = useState<string>("");
   const [payload, setPayload] = useState<IPayload>({
     mass: "",
@@ -25,7 +26,13 @@ function App(props: MainProps) {
   });
 
   const handleSend = () => {
+    const { mass, length } = payload;
     console.log(payload);
+    if (mass === "" || length === "") {
+      setMsg("Please enter numbers in these fields");
+      return;
+    }
+    setMsg("");
     setStatus("loading");
 
     axios

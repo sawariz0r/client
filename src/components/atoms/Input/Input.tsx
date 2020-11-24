@@ -11,7 +11,12 @@ interface InputProps {
 }
 
 const Input = (props: InputProps) => {
-  return <input {...props} />;
+  return (
+    <>
+      <label htmlFor={props.name}>{props.name}</label>
+      <input {...props} id={props.name} />
+    </>
+  );
 };
 
 export default Input;
