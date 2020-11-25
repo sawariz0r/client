@@ -7,7 +7,7 @@ interface Props {}
 const History = (props: Props) => {
   const [history, setHistory] = useState([]);
   useEffect(() => {
-    let socket = io(":4002");
+    let socket = io("https://quiet-aeolian-harbor.glitch.me");
 
     socket.on("history", (res: any) => {
       setHistory(res.data.reverse());

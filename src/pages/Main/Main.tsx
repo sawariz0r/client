@@ -28,6 +28,7 @@ function App(props: MainProps) {
   const handleSend = () => {
     const { mass, length } = payload;
     console.log(payload);
+
     if (mass === "" || length === "") {
       setMsg("Please enter numbers in these fields");
       return;
@@ -44,7 +45,8 @@ function App(props: MainProps) {
         }
       })
       .catch((err) => {
-        console.error(err);
+        setMsg("An error occurred, code: " + err.response.status);
+        setStatus("ready");
       });
   };
 
@@ -69,11 +71,14 @@ function App(props: MainProps) {
       <header className="App-header">
         <img src={logo} width="150px" className="App-logo" alt="logo" />
         {status !== "done" && (
-          <p>
-            Super advanced tree-calculator! <br />
-            Runs the most efficient algorithms on one of the worlds most well
-            written servers in the world of localhost
-          </p>
+          <>
+            <p>
+              Super advanced tree-calculator! <br />
+              Runs the most efficient algorithms on one of the worlds most well
+              written servers in the world of localhost
+            </p>
+            <span>{msg}</span>
+          </>
         )}
         <Calculator
           status={status}
@@ -86,8 +91,6 @@ function App(props: MainProps) {
       </header>
     </div>
   );
-
-  return null;
 }
 
 export default App;
