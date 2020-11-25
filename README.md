@@ -1,3 +1,8 @@
+# Server repository for this client:
+
+Here: [https://github.com/sawariz0r/qte-test-server](https://github.com/sawariz0r/qte-test-server)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
