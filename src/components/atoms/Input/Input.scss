@@ -1,0 +1,28 @@
+input {
+  padding: 8px 16px;
+  width: 160px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  position: relative;
+  color: #0c0c0c;
+
+  transition: padding 0.2s ease-in-out;
+  &:focus {
+    padding: 16px 16px;
+  }
+
+  &:invalid {
+    opacity: 0.8;
+  }
+}
+
+label {
+  color: "#f3f3f3";
+  font-size: 0.8rem;
+  width: 150px;
+  padding-bottom: 2px;
+  text-align: start;
+  text-transform: capitalize;
+}
